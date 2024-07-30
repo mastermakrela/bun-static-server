@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>File List</title>
+
+		<style>
+			body {
+				font-family: sans-serif;
+				margin: 2rem;
+			}
+
+			table {
+				border-collapse: collapse;
+				width: 80%;
+			}
+
+			thead {
+				padding-bottom: 1rem;
+			}
+
+			tbody {
+				margin-top: 1rem;
+			}
+
+			th {
+				text-align: left;
+			}
+
+			td {
+				padding: 0 0.5rem;
+				padding-bottom: 0.4rem;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Directory Path: @@DIR_PATH@@</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Size</th>
+					<th>Modified</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="padding-bottom: 0.75rem; padding-top: 0.5rem">
+						<a href="/../">..</a>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				@@FILES@@
+			</tbody>
+		</table>
+	</body>
+</html>
